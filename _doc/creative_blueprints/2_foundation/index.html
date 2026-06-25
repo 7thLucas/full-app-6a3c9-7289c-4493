@@ -1,0 +1,81 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; gap: 3rem; }
+  .mode-portrait .sl-layout { flex-direction: column; gap: 2rem; }
+  .mode-landscape .sl-col { width: 50%; }
+  .mode-portrait .sl-col { width: 100%; }
+  .mode-landscape .sl-visual { display: flex; }
+  .mode-portrait .sl-visual { display: none; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Header -->
+    <div class="mb-10">
+      <span class="text-xs font-semibold tracking-widest uppercase" style="color:#4F46E5;">The Opportunity</span>
+      <h2 class="font-black mt-2" style="font-size:2rem; color:#0F172A; letter-spacing:-0.02em;">Why small businesses need this</h2>
+    </div>
+
+    <!-- Two-col split -->
+    <div class="sl-layout flex flex-1">
+
+      <!-- Problem -->
+      <div class="sl-col flex flex-col">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background:#FEE2E2;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3 class="font-bold text-lg" style="color:#DC2626;">The Problem</h3>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <div class="rounded-xl p-5 border" style="background:#FFF8F8; border-color:#FECACA;">
+            <p class="font-semibold text-sm mb-1" style="color:#991B1B;">No dedicated marketing team</p>
+            <p class="text-sm leading-relaxed" style="color:#475569;">Small business owners are their own marketers — with no budget for an agency and no time to learn the craft.</p>
+          </div>
+          <div class="rounded-xl p-5 border" style="background:#FFF8F8; border-color:#FECACA;">
+            <p class="font-semibold text-sm mb-1" style="color:#991B1B;">Scattered assets, no strategy</p>
+            <p class="text-sm leading-relaxed" style="color:#475569;">Content is created ad hoc. Brand is inconsistent. There's no plan — just reaction.</p>
+          </div>
+          <div class="rounded-xl p-5 border" style="background:#FFF8F8; border-color:#FECACA;">
+            <p class="font-semibold text-sm mb-1" style="color:#991B1B;">Zero strategic direction</p>
+            <p class="text-sm leading-relaxed" style="color:#475569;">Without campaigns or a content calendar, marketing never compounds — every post starts from zero.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="sl-col flex flex-col">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background:#EEF2FF;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3 class="font-bold text-lg" style="color:#4F46E5;">The Solution</h3>
+        </div>
+
+        <div class="rounded-2xl p-6 flex-1 flex flex-col justify-between" style="background: linear-gradient(135deg, #4F46E5 0%, #6366F1 100%);">
+          <div>
+            <p class="font-black text-2xl mb-4" style="color:#ffffff; letter-spacing:-0.02em;">An AI that thinks like a marketing manager</p>
+            <p class="text-sm leading-relaxed mb-6" style="color:#C7D2FE;">Not just a content generator — a strategic co-pilot. Describe your business and goals; get structured campaigns, on-brand content, and a real marketing plan back.</p>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center gap-3 rounded-lg p-3" style="background:rgba(255,255,255,0.12);">
+              <div class="w-2 h-2 rounded-full flex-shrink-0" style="background:#A5B4FC;"></div>
+              <span class="text-sm font-medium" style="color:#EEF2FF;">Strategy-first, content second</span>
+            </div>
+            <div class="flex items-center gap-3 rounded-lg p-3" style="background:rgba(255,255,255,0.12);">
+              <div class="w-2 h-2 rounded-full flex-shrink-0" style="background:#A5B4FC;"></div>
+              <span class="text-sm font-medium" style="color:#EEF2FF;">Visual workspace, not a blank doc</span>
+            </div>
+            <div class="flex items-center gap-3 rounded-lg p-3" style="background:rgba(255,255,255,0.12);">
+              <div class="w-2 h-2 rounded-full flex-shrink-0" style="background:#A5B4FC;"></div>
+              <span class="text-sm font-medium" style="color:#EEF2FF;">Every output on-brand, every time</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
