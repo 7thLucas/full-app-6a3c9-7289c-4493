@@ -1,0 +1,121 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; gap: 2.5rem; }
+  .mode-portrait .sl-layout { flex-direction: column; gap: 2rem; }
+  .mode-landscape .sl-left { width: 52%; }
+  .mode-landscape .sl-right { width: 48%; }
+  .mode-portrait .sl-left { width: 100%; }
+  .mode-portrait .sl-right { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Header -->
+    <div class="mb-2">
+      <span class="text-xs font-semibold tracking-widest uppercase" style="color:#4F46E5;">North Star</span>
+      <h2 class="font-black mt-2" style="font-size:2rem; color:#0F172A; letter-spacing:-0.02em;">Weekly Verified Operations</h2>
+      <p class="text-xs mt-1 font-medium" style="color:#94A3B8;">Projected impact — based on your inputs</p>
+    </div>
+
+    <!-- Assumption banner -->
+    <div class="rounded-lg px-4 py-2 flex items-center gap-2 mt-4 mb-6" style="background:#FFF7ED; border: 1px solid #FED7AA;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#EA580C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <span class="text-xs font-semibold" style="color:#EA580C;">Assumption inputs — adjust these with your real numbers</span>
+    </div>
+
+    <div class="sl-layout flex flex-1">
+
+      <!-- Left: Operations + formula -->
+      <div class="sl-left flex flex-col gap-4">
+
+        <!-- Operation definition -->
+        <div class="rounded-2xl p-5 border" style="background:#F8F9FF; border-color:#E0E7FF;">
+          <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color:#6366F1;">Verified Operation</p>
+          <p class="font-bold text-sm mb-1" style="color:#1E293B;">Campaign Created</p>
+          <p class="text-xs leading-relaxed" style="color:#64748B;">A complete marketing campaign — with goals, messaging, and channel plan — generated and saved in the workspace by a real user. Edits and logins are not operations.</p>
+        </div>
+
+        <div class="rounded-2xl p-5 border" style="background:#F8F9FF; border-color:#E0E7FF;">
+          <p class="text-xs font-semibold uppercase tracking-wide mb-2" style="color:#6366F1;">Also Counted</p>
+          <p class="font-bold text-sm mb-1" style="color:#1E293B;">Content Plan Generated</p>
+          <p class="text-xs leading-relaxed" style="color:#64748B;">A content calendar or social media post batch completed and saved — distinct from browsing or drafting.</p>
+        </div>
+
+        <!-- Formula -->
+        <div class="rounded-2xl p-5 border" style="background:#0F172A; border-color:#1E293B;">
+          <p class="text-xs font-semibold uppercase tracking-wide mb-3" style="color:#A5B4FC;">Weekly Volume Formula</p>
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-2">
+              <span class="rounded px-2 py-0.5 text-xs font-bold" style="background:#F97316; color:#fff;">Assumption</span>
+              <span class="text-xs" style="color:#94A3B8;">Active users per week</span>
+              <span class="text-xs font-bold ml-auto" style="color:#E2E8F0;">= 10 users</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="rounded px-2 py-0.5 text-xs font-bold" style="background:#F97316; color:#fff;">Assumption</span>
+              <span class="text-xs" style="color:#94A3B8;">Operations per user per week</span>
+              <span class="text-xs font-bold ml-auto" style="color:#E2E8F0;">× 3 ops</span>
+            </div>
+            <div class="border-t mt-1 pt-2" style="border-color:#334155;">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold" style="color:#C7D2FE;">Weekly Verified Operations</span>
+                <span class="font-black text-lg" style="color:#818CF8;">= 30 ops / week</span>
+              </div>
+              <p class="text-xs mt-1" style="color:#64748B;">10 users × 3 operations each per week</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Value + ROI -->
+      <div class="sl-right flex flex-col gap-4">
+
+        <!-- Value per operation -->
+        <div class="rounded-2xl p-5 border" style="background:#F8F9FF; border-color:#E0E7FF;">
+          <p class="text-xs font-semibold uppercase tracking-wide mb-3" style="color:#6366F1;">Value Per Operation</p>
+          <div class="flex flex-col gap-1.5">
+            <div class="flex justify-between text-xs" style="color:#475569;">
+              <span>Time saved per operation</span>
+              <span class="font-semibold" style="color:#1E293B;">90 min</span>
+            </div>
+            <div class="flex justify-between text-xs" style="color:#475569;">
+              <span>Owner hourly rate equivalent</span>
+              <span class="font-semibold" style="color:#1E293B;">$50 / hr</span>
+            </div>
+            <div class="flex justify-between text-xs border-t pt-1.5 mt-1" style="color:#475569; border-color:#E2E8F0;">
+              <span class="font-bold" style="color:#1E293B;">Value per operation</span>
+              <span class="font-bold" style="color:#4F46E5;">$75</span>
+            </div>
+            <p class="text-xs mt-1" style="color:#94A3B8;">90 min × $50/hr = $75 per campaign or content plan created</p>
+          </div>
+        </div>
+
+        <!-- Total value -->
+        <div class="rounded-2xl p-5 flex flex-col gap-3" style="background: linear-gradient(135deg, #4F46E5 0%, #6366F1 100%);">
+          <p class="text-xs font-semibold uppercase tracking-wide" style="color:#A5B4FC;">Projected Total Value</p>
+
+          <div class="flex items-end justify-between">
+            <div>
+              <p class="text-xs mb-0.5" style="color:#C7D2FE;">Per week</p>
+              <p class="font-black text-2xl" style="color:#ffffff;">$2,250</p>
+              <p class="text-xs" style="color:#A5B4FC;">30 ops × $75</p>
+            </div>
+            <div class="text-right">
+              <p class="text-xs mb-0.5" style="color:#C7D2FE;">Per year</p>
+              <p class="font-black text-2xl" style="color:#ffffff;">$117,000</p>
+              <p class="text-xs" style="color:#A5B4FC;">$2,250 × 52 weeks</p>
+            </div>
+          </div>
+
+          <div class="border-t pt-3" style="border-color:rgba(255,255,255,0.2);">
+            <p class="text-xs leading-relaxed" style="color:#C7D2FE;">
+              Value represents owner time reclaimed and agency cost avoided. Adjust assumption chips on the left with your real user count and usage frequency.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
