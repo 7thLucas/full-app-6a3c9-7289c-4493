@@ -1,4 +1,4 @@
-# Product Overview — AI Brand Manager
+# Product Overview — Brander
 
 ## What It Is
 AI Brand Manager is a visual workspace app for small businesses that acts as a dedicated AI marketing manager. It generates campaigns, content plans, brand guidelines, social media posts, and full marketing strategies — all from a single, organized workspace.
